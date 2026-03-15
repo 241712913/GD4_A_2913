@@ -33,3 +33,56 @@ body {
 .animate-bounce-once {
   animation: bounce-once 0.3s ease-out;
 }
+
+@keyframes float-title {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float-title 2s ease-in-out infinite;
+}
+
+.card-container {
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background: linear-gradient(to bottom right, #7c3aed, #4f46e5);
+}
+
+.card-back {
+  background: white;
+  transform: rotateY(180deg);
+}
