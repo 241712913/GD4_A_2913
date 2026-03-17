@@ -125,8 +125,13 @@ export default function Home() {
       <div className="flex gap-3 mb-6">
         <button
           onClick={() => setDifficulty(4)}
-          className={`px-4 py-2 rounded-full font-semibold ${
-            difficulty === 4 ? "bg-yellow-400 text-black" : "bg-white/20 text-white"
+          className={`px-5 py-2 rounded-full font-semibold flex items-center gap-2
+          transition-all duration-300
+
+          ${
+            difficulty === 4
+              ? "bg-yellow-400 text-black shadow-lg scale-105"
+              : "bg-white/20 text-white border border-white/20 hover:bg-white/30 hover:scale-105 hover:shadow-lg hover:shadow-white/30 hover:-translate-y-1"
           }`}
         >
           😊 Easy (4)
@@ -134,8 +139,13 @@ export default function Home() {
 
         <button
           onClick={() => setDifficulty(6)}
-          className={`px-4 py-2 rounded-full font-semibold ${
-            difficulty === 6 ? "bg-yellow-400 text-black" : "bg-white/20 text-white"
+          className={`px-5 py-2 rounded-full font-semibold flex items-center gap-2
+          transition-all duration-300
+
+          ${
+            difficulty === 6
+              ? "bg-yellow-400 text-black shadow-lg scale-105"
+              : "bg-white/20 text-white border border-white/20 hover:bg-white/30 hover:scale-105 hover:shadow-lg hover:shadow-white/30 hover:-translate-y-1"
           }`}
         >
           😐 Medium (6)
@@ -143,8 +153,13 @@ export default function Home() {
 
         <button
           onClick={() => setDifficulty(8)}
-          className={`px-4 py-2 rounded-full font-semibold ${
-            difficulty === 8 ? "bg-yellow-400 text-black" : "bg-white/20 text-white"
+          className={`px-5 py-2 rounded-full font-semibold flex items-center gap-2
+          transition-all duration-300
+
+          ${
+            difficulty === 8
+              ? "bg-yellow-400 text-black shadow-lg scale-105"
+              : "bg-white/20 text-white border border-white/20 hover:bg-white/30 hover:scale-105 hover:shadow-lg hover:shadow-white/30 hover:-translate-y-1"
           }`}
         >
           ☠️ Hard (8)
