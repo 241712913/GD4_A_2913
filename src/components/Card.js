@@ -22,12 +22,10 @@ ${isMatched ? 'opacity-70 ring-2 ring-green-400' : ''}
 
             <div className={`card-inner ${isOpen ? "flipped" : ""}`}>
 
-            {/* depan kartu */}
             <div className="card-front shadow-lg">
                 <FaQuestion className="text-white text-2xl" />
             </div>
 
-            {/* belakang kartu */}
             <div className={`card-back shadow-md ${isMatched ? "ring-2 ring-green-400" : ""}`}>
                 <span className="animate-bounce-once text-3xl">
                 <IconComponent style={{ color: card.color }} />
