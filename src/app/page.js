@@ -113,8 +113,8 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-900 p-4">
-
+    <div className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#1a0f0f] via-[#5c1a1a] to-[#2a0d0d] p-4 overflow-hidden">
+      
       <h1 className="text-5xl font-bold mb-9 text-white drop-shadow-lg flex items-center gap-3 animate-float">
         <GiCardJoker className="text-yellow-300 text-5xl" />
         <span className="bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-400 bg-clip-text text-transparent">
